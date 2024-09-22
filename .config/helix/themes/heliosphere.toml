@@ -1,0 +1,123 @@
+"type" = "h_constant"
+"constant" = "h_def"
+"constant.builtin" = { fg = "h_def" }
+"constant.builtin.boolean" = "h_def"
+"constant.numeric" = "h_def"
+"constant.character.escape" = "h_def"
+"string" = "h_string"
+"string.regexp" = "h_string"
+"string.special" = "h_string"
+"comment" = { fg = "h_comment" }
+"variable" = "fg"
+"variable.builtin" = { fg = "h_keyword" }
+"variable.parameter" = "fg"
+"variable.other.member" = "fg"
+"label" = "h_special"
+"punctuation" = "grey2"
+"punctuation.delimiter" = "grey1"
+"punctuation.bracket" = "fg"
+"punctuation.special" = "blue"
+"keyword" = "h_keyword"
+"keyword.operator" = "h_operator"
+"keyword.directive" = "h_keyword"
+"keyword.storage" = "h_keyword"
+"operator" = "h_operator"
+"function" = "h_def"
+"function.macro" = "h_def"
+"tag" = "h_special"
+"namespace" = { fg = "h_constant" }
+"attribute" = { fg = "h_keyword" }
+"constructor" = "h_def"
+"module" = "h_def"
+"special" = "h_special"
+
+"diff.plus" = "green"
+"diff.delta" = "blue"
+"diff.minus" = "red"
+
+"ui.background" = { bg = "h_background" }
+"ui.background.separator" = "bg_visual"
+"ui.cursor" = { fg = "bg1", bg = "grey2" }
+"ui.cursor.insert" = { fg = "h_background", bg = "grey1" }
+"ui.cursor.select" = { fg = "h_background", bg = "blue" }
+"ui.cursor.match" = { bg = "bg4", modifiers = ["bold"] }
+"ui.cursor.primary" = { fg = "h_background", bg = "fg" }
+"ui.cursorline.primary" = { bg = "bg1" }
+"ui.cursorline.secondary" = { bg = "bg2" }
+"ui.selection" = { bg = "bg3" }
+"ui.linenr" = "grey0"
+"ui.linenr.selected" = "grey2"
+"ui.statusline" = { fg = "grey2", bg = "bg3" }
+"ui.statusline.inactive" = { fg = "grey0", bg = "bg1" }
+"ui.statusline.normal" = { fg = "h_background", bg = "statusline1", modifiers = [
+  "bold",
+] }
+"ui.statusline.insert" = { fg = "h_background", bg = "statusline2", modifiers = [
+  "bold",
+] }
+"ui.statusline.select" = { fg = "h_background", bg = "blue", modifiers = ["bold"] }
+"ui.bufferline" = { fg = "grey2", bg = "bg3" }
+"ui.bufferline.active" = { fg = "h_background", bg = "statusline1", modifiers = [
+  "bold",
+] }
+"ui.popup" = { fg = "grey2", bg = "bg2" }
+"ui.window" = { fg = "bg4", bg = "bg_dim" }
+"ui.help" = { fg = "fg", bg = "bg2" }
+"ui.text" = "fg"
+"ui.text.focus" = "fg"
+"ui.menu" = { fg = "fg", bg = "bg3" }
+"ui.menu.selected" = { fg = "h_background", bg = "green" }
+"ui.virtual.ruler" = { bg = "bg3" }
+"ui.virtual.whitespace" = { fg = "bg4" }
+"ui.virtual.indent-guide" = { fg = "bg4" }
+"ui.virtual.inlay-hint" = { fg = "grey0" }
+"ui.virtual.wrap" = { fg = "grey0" }
+
+"hint" = "green"
+"info" = "blue"
+"warning" = "yellow"
+"error" = "red"
+
+"diagnostic.hint" = { underline = { color = "green", style = "curl" } }
+"diagnostic.info" = { underline = { color = "blue", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "yellow", style = "curl" } }
+"diagnostic.error" = { underline = { color = "red", style = "curl" } }
+
+[palette]
+# heliosphere specific
+h_comment = "#808187"
+h_keyword = "#A626A4"
+h_operator = "#383A42"
+h_constant = "#AA3731"
+h_background = "#FaFaFa"
+h_string = "#448C27"
+h_def = "#325CC0"
+h_special = "#c71c44"
+
+bg_dim = "#F0F0F0"
+bg1 = "#eeeeee"
+bg2 = "#f0f0f0" # lsp windows
+bg3 = "#eaeaea" # ruler, statusline
+bg4 = "#e0e0e0" # whitespace
+bg5 = "#f0f0f0"
+bg_red = "#fbe3da"
+bg_visual = "#eaedc8"
+bg_yellow = "#faedcd"
+bg_green = "#f0f1d2"
+bg_blue = "#e9f0e9"
+
+fg = "#000000"
+red = "#f85552"
+orange = "#f57d26"
+yellow = "#dfa000"
+green = "#8da101"
+blue = "#3a94c5"
+aqua = "#35a77c"
+purple = "#df69ba"
+
+grey0 = "#a6b0a0"
+grey1 = "#939f91"
+grey2 = "#829181"
+statusline1 = "#93b259"
+statusline2 = "#708089"
+statusline3 = "#e66868"

@@ -1,0 +1,25 @@
+[colors.primary]
+background = "#ffffff"
+foreground = "#4c5a62"
+
+[font]
+size = 15
+
+[font.normal]
+family = "Intel One Mono"
+
+[window]
+decorations = "Full"
+dynamic_title = false
+
+[window.dimensions]
+columns = 150
+lines = 40
+
+[window.padding]
+x = 5
+y = 5
+
+[window.position]
+x = 30
+y = 50
