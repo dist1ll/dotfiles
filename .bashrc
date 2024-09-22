@@ -3,6 +3,8 @@ if [ -f /etc/bashrc ]; then
     . /etc/bashrc
 fi
 
+export EDITOR=hx
+
 # Set up SSH auth with gpg-agent and set correct tty
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 export GPG_TTY=$(tty)
