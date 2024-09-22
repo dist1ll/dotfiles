@@ -10,3 +10,4 @@ gpg-connect-agent updatestartuptty /bye >> /dev/null
 
 # Miscellaneous
 export SYSTEMD_PAGER=
+. "$HOME/.cargo/env"
