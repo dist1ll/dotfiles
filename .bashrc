@@ -4,6 +4,7 @@ if [ -f /etc/bashrc ]; then
 fi
 
 export EDITOR=hx
+export PATH=$PATH:~/bin
 
 # Set up SSH auth with gpg-agent and set correct tty
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
