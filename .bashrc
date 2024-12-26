@@ -5,6 +5,7 @@ fi
 
 export EDITOR=hx
 export PATH=$PATH:~/bin
+export PATH=$PATH:~/.local/bin
 
 # Set up SSH auth with gpg-agent and set correct tty
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
