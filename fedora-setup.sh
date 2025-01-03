@@ -52,5 +52,7 @@ sudo dnf group remove -y \
 # Admin, util, miscallaneous 
 sudo dnf -y install \
 	pass \
+	just \
+	pre-commit \
 	cloc
 
