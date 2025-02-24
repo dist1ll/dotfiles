@@ -3,7 +3,7 @@ background = "#ffffff"
 foreground = "#4c5a62"
 
 [font]
-size = 14
+size = 13
 
 [font.normal]
 family = "Intel One Mono"
