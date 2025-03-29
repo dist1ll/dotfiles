@@ -2,10 +2,6 @@
 # Might require disabling systemd equivalent on server version.
 # sudo systemctl disable NetworkManager-wait-online.service 
 
-# Desktop environment
-sudo dnf -y groupinstall \
-	"Mate Desktop"
-
 # Dev environment
 sudo dnf -y install \
 	intel-one-mono-fonts \
@@ -36,7 +32,6 @@ sudo dnf -y install \
 sudo dnf -y install \
 	clang \
 	clang-tools-extra \
-	zig \
 	rustup
 # Install Rust nightly
 rustup-init -y \
