@@ -15,6 +15,7 @@ sudo dnf -y install \
 	perf \
 	cmake \
 	lshw \
+	htop \
 	qemu-system-riscv \
 	numactl \
 	numactl-devel \
