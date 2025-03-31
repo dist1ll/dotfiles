@@ -3,3 +3,5 @@
 	name = Adrian Alic
 [core]
 	editor = hx
+[push]
+	autoSetupRemote = true

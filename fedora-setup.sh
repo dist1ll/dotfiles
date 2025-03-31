@@ -29,11 +29,13 @@ sudo dnf -y install \
 	libarchive-devel \
 	bzip2-devel
 
-# Languages, compilers, LSPs
+# Languages, compilers, linkers, LSPs
 sudo dnf -y install \
 	clang \
 	clang-tools-extra \
+	mold \
 	rustup
+
 # Install Rust nightly
 rustup-init -y \
 	--default-host x86_64-unknown-linux-gnu \
