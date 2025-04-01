@@ -29,6 +29,12 @@ sudo dnf -y install \
 	libarchive-devel \
 	bzip2-devel
 
+# Unity dev
+sudo dnf -y install \
+	openssl \
+	openssl-libs \
+	GConf2
+
 # Languages, compilers, linkers, LSPs
 sudo dnf -y install \
 	clang \
