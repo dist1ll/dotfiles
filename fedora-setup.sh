@@ -17,17 +17,24 @@ sudo dnf -y install \
 	lshw \
 	htop \
 	qemu-system-riscv \
+	gcc-riscv64-linux-gnu \
 	numactl \
 	numactl-devel \
 	dpdk-devel \
 	dpdk-tools \
 	@virtualization
 
+# U-Boot
+sudo dnf -y install \
+	openssl-devel-engine \
+	gnutls-devel
+
 # FreeBSD dev
 sudo dnf -y install \
 	lld \
 	libarchive-devel \
-	bzip2-devel
+	bzip2-devel \
+	patch
 
 # Unity dev
 sudo dnf -y install \
