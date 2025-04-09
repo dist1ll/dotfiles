@@ -27,7 +27,9 @@ sudo dnf -y install \
 # U-Boot
 sudo dnf -y install \
 	openssl-devel-engine \
-	gnutls-devel
+	python3-devel \
+	gnutls-devel \
+	swig
 
 # FreeBSD dev
 sudo dnf -y install \
