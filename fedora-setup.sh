@@ -22,6 +22,7 @@ sudo dnf -y install \
 	numactl-devel \
 	dpdk-devel \
 	dpdk-tools \
+	dtc \
 	@virtualization
 
 # U-Boot
