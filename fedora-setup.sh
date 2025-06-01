@@ -18,6 +18,7 @@ sudo dnf -y install \
 	htop \
 	qemu-system-riscv \
 	gcc-riscv64-linux-gnu \
+	gcc-riscv32-linux-gnu \
 	numactl \
 	numactl-devel \
 	dpdk-devel \
