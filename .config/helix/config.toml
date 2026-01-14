@@ -17,6 +17,10 @@ completion-trigger-len = 3
 rulers = [80]
 auto-format = false
 true-color = true
+end-of-line-diagnostics = "disable"
+
+[editor.inline-diagnostics]
+cursor-line = "disable"
 
 [editor.whitespace.render]
 space = "all"
