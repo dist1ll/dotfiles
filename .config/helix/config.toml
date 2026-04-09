@@ -13,7 +13,7 @@ f = ":format"
 
 [editor]
 idle-timeout = 0
-completion-trigger-len = 3
+completion-trigger-len = 2
 rulers = [80]
 auto-format = false
 true-color = true
