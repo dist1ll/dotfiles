@@ -19,7 +19,6 @@ sudo dnf -y install \
 	qemu-system-riscv \
 	gcc-riscv64-linux-gnu \
 	gcc-riscv32-linux-gnu \
-	gcc-aarch64-linux-gnu \
 	numactl \
 	numactl-devel \
 	dpdk-devel \
@@ -67,6 +66,7 @@ sudo dnf group remove -y \
 
 # Admin, util, miscallaneous 
 sudo dnf -y install \
+	gnupg2-scdaemon \
 	pass \
 	just \
 	pre-commit \
