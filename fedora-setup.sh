@@ -8,6 +8,9 @@ sudo dnf -y install \
 	alacritty \
 	helix
 
+# Zed IDE
+curl -f https://zed.dev/install.sh | sh
+
 # System packages, kernel dev, hardware, virtualization
 sudo dnf -y install \
 	git-lfs \
