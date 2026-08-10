@@ -36,6 +36,10 @@ sudo dnf -y install \
 	gnutls-devel \
 	swig
 
+# PCB
+sudo dnf -y install \
+	kicad
+
 # FreeBSD dev
 sudo dnf -y install \
 	lld \
