@@ -20,6 +20,7 @@ sudo dnf -y install \
 	lshw \
 	htop \
 	qemu-system-riscv \
+	qemu-system-aarch64 \
 	gcc-riscv64-linux-gnu \
 	gcc-riscv32-linux-gnu \
 	numactl \
