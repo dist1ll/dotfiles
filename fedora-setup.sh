@@ -68,6 +68,37 @@ rustup-init -y \
 	--no-modify-path
 . "$HOME/.cargo/env"
 
+# FPGA dev, RTL simulation, waveform viewers, serial tests
+sudo dnf -y install \
+	git \
+	curl \
+	wget \
+	tar \
+	unzip \
+	patch \
+	diffutils \
+	gcc \
+	gcc-c++ \
+	make \
+	autoconf \
+	automake \
+	libtool \
+	m4 \
+	pkgconf-pkg-config \
+	opam \
+	bubblewrap \
+	gmp-devel \
+	zlib-devel \
+	libffi-devel \
+	readline-devel \
+	ncurses-devel \
+	verilator \
+	gtkwave \
+	python3 \
+	python3-pyserial \
+	picocom \
+	usbutils || exit 1
+
 # Get rid of things we don't need
 sudo dnf group remove -y \
 	libreoffice
