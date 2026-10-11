@@ -64,7 +64,7 @@ sudo dnf -y install \
 # Install Rust nightly
 rustup-init -y \
 	--default-host x86_64-unknown-linux-gnu \
-	--default-toolchain nightly
+	--default-toolchain nightly \
 	--no-modify-path
 . "$HOME/.cargo/env"
 
@@ -97,7 +97,16 @@ sudo dnf -y install \
 	python3 \
 	python3-pyserial \
 	picocom \
+	zlib-ng-compat-static \
 	usbutils || exit 1
+
+# Hardcaml (https://hardcaml.org/getting-started/)
+opam init --bare -y
+if ! opam switch list --short | grep -Fxq hardcaml; then
+    opam switch create hardcaml ocaml-base-compiler.5.3.0 -y
+fi
+eval "$(opam env --switch=hardcaml --set-switch)"
+opam install -y hardcaml ppx_hardcaml hardcaml_waveterm dune
 
 # Get rid of things we don't need
 sudo dnf group remove -y \
@@ -110,4 +119,3 @@ sudo dnf -y install \
 	just \
 	pre-commit \
 	cloc
-
