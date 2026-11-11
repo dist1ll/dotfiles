@@ -3,14 +3,10 @@ if [ -f /etc/bashrc ]; then
     . /etc/bashrc
 fi
 
-export XCC=/usr/bin/clang
-export XCXX=/usr/bin/clang++ 
-export XCPP=/usr/bin/clang-cpp
-export XLD=/usr/bin/ld.lld
-
 export EDITOR=hx
 export PATH=$PATH:~/bin
 export PATH=$PATH:~/.local/bin
+export PATH="$PATH:/home/zk/omnisharp"
 
 # Set up SSH auth with gpg-agent and set correct tty
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
@@ -20,4 +16,3 @@ gpg-connect-agent updatestartuptty /bye >> /dev/null
 # Miscellaneous
 export SYSTEMD_PAGER=
 . "$HOME/.cargo/env"
-eval $(opam env)
